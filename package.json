@@ -1,6 +1,25 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.1.3",
+  "name": "exemple-site-vitrine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
     "sass": "^1.52.2"
+  },
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iTwiixZ/Site-vitrine-exemple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iTwiixZ/Site-vitrine-exemple/issues"
+  },
+  "homepage": "https://github.com/iTwiixZ/Site-vitrine-exemple#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
