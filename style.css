@@ -23,4 +23,8 @@ textarea {
   resize: none;
 }
 
+.maps {
+  border: solid 2px black;
+}
+
 /*# sourceMappingURL=style.css.map */

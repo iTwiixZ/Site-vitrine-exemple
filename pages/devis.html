@@ -47,7 +47,7 @@
         <p class="mt-3">Merci pour l'intérêt porté à nos services! Pour demander un devis gratuit, merci de compléter et soumettre ce formulaire. <br> Nous vous contacterons le plus vite possible.</p>
         <p>Nous sommes confiant que vous allez trouver nos prix satisfaisants, et nous sommes impatients de travailler avec vous. <br> Merci de nous contacter si vous avez la moindre question.</p>
         <h3 class="text-danger mt-5">A propos de votre demande</h3>
-        <form action="POST">
+        <form onsubmit="sendMail(); reset(); return false;">
             <div class="mt-2">
                 <label for="besoin">De quoi avez vous besoin ? </label>
                 <select required class="form-select mt-1" aria-placeholder="De quoi avez vous besoin ?" aria-label="besoin">
@@ -69,17 +69,18 @@
                   </select>
             </div>
                 <h3 class="text-danger mt-3">A propos de vous</h3>
-                <div>
+               
+                <div class="">
                    <label for="identité"></label>
-                   <input class="form-control" id="identité" placeholder="Nom & Prénom" type="text">
-                    <label for="email"></label>
-                   <input class="form-control" id="email" placeholder="email" type="email">
+                   <input class="form-control" id="identité"  required placeholder="Nom & Prénom" type="text">
+                   <label for="email"></label>
+                   <input class="form-control" id="email"     required placeholder="email" type="email">
                    <label for="téléphone"></label>
-                   <input class="form-control" id="téléphone" placeholder="téléphone" type="number">
+                   <input class="form-control" id="téléphone" required placeholder="téléphone" type="number">
                 </div>
                 
 
-            <!-- <button type="submit" class=" mt-3 btn btn-primary">Envoyer</button> -->
+            <button type="submit" class="btn btn-primary mt-3">Envoyer</button>
         </form>
     </section>
 
